@@ -299,7 +299,21 @@ public class Main {
 		Insurance_Package InsPack = new Insurance_Package(Description, Code, Insurance_Companies[choice3]);
 		insurance_Package_Catalog.Add(InsPack);
 		
+		System.out.println("Τελος Σεναριου, η συνεχεια είναι παραδειγμα Εμφάνιση Διαδικασιών Ασφάλισης");
+		Insurance_procedures pro1 = new Insurance_procedures(" Σύνταξη και αποστολή προταση ασφάλισης", "1.ο πελάτης συμπληρώνει τα εντυπα και επιλέγει πακέτο ασφάλισης.\r\n"
+				+ "2.ο πράκτορας αρχειοθετεί τα έντυπα.\r\n"
+				+ "3.ο πράκτορας συμπληρώνει πρόταση ασφάλισης και την στέλνει στην ασφαλιστική.\r\n");
+		Insurance_procedures pro2 = new Insurance_procedures("Διαχείριση ζημιών και αποζημίωση πελατών", "1.ο πελάτης ενημερώνει τον πράκτορα.\r\n"
+				+ "2.ο πράκτορας ενημερώνει τον πραγματογνόμονα.\r\n"
+				+ "3.ο πράκτορας παίρνει απο την τροχαία το δελτίο συμβάντους και απο τον πραγματογνώμονα την έκθεση πραγματογνωσύνης.\r\n"
+				+ "4.ο πράκτορας στέλνει τα έγγραφα στην ασφαλιστική.\r\n"
+				+ "5.όταν ο πράκροτας λάβει το πόρισμα απο την ασφαλιστική αποζημιόνει ή οχι τον πελάτη.\r\n");
 		
+		Insurance_procedures[] insurance_procedures = {pro1, pro2};
+		for (Insurance_procedures i:insurance_procedures) {
+			System.out.println(i.getName());
+			System.out.println(i.getDescription());
+		}
 	}
 		
 
